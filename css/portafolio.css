@@ -355,6 +355,7 @@ footer img {
         justify-items: center;
         }
    .redes-sociales a{
+    margin 15px;
     overflow: hidden;
     display: flex;
     justify-content: center;
