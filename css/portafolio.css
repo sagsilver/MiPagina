@@ -210,7 +210,7 @@ footer {
     margin: auto;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
 }
 footer a{
