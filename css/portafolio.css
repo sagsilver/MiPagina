@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background: blue;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(222, 60%, 43%, 0.603), hsla(224, 67%, 29%, 0.664)), url('../images/fondo.jpg');
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(222, 60%, 43%, 0.603), hsla(224, 67%, 29%, 0.664)), url('../images/fondo.jpg');
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+    animation: moverDerecha 1s ease-in;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 18px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos {
+    /* margin-left: 100px; */
+    display: flex;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 200px 0 30px 0;
+    /* margin-right: 100px; */
+}
+
+.textos h1 {
+    color: white;
+    font-size: 100px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos h2 {
+    color: white;
+    font-size: 50px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos a {
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+}
+
+main .sobre-mi {
+    padding: 30px 0 60px 0;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulos {
+    font-weight: 300;
+    color: #1d273b;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sobre-mi {
+    background: #f2f2f2;
+}
+
+.mis-cualidades {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cualidad {
+    font-size: 90%;
+    width: 45%;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: left;
+    color: #1d273b;
+    animation: moverIzquierda 2s ease-in;
+}
+
+.cualidad:hover {
+    box-shadow: 0 8px 32px rgba(44, 83, 175, .46)
+}
+
+.cualidad h2 {
+    margin: 10px 20px;
+    font-weight: 400;
+}
+
+.cualidad h3 {
+    margin: 10px 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+}
+
+.cualidad p {
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin: 10px 20px;
+}
+
+.cualidad li {
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fondo-img {
+    background: #2c53b0;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 8px 32px rgba(44, 83, 175, .46)
+}
+
+.iconos img {
+    width: 30px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicios img {
+    width: 60%;
+    position: relative;
+    padding: 10px;
+}
+
+.servicios .lista-servicios {
+    width: 38%;
+    margin-top: 70px;
+    position: relative;
+}
+
+.lista-servicios h4 {
+    font-size: 20px;
+    border-radius: 12px;
+    background: #f2f2f2;
+    padding: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.lista-servicios h4:hover {
+    box-shadow: 0 8px 32px rgba(44, 83, 175, .46)
+}
+
+footer {
+    background: #2c53b0;
+    margin-top: 70px;
+}
+
+.redes-sociales {
+    padding: 70px 0;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+footer a{
+    padding: 5px;
+}
+footer img {
+    width: 60px;
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*implementacion Responsive*/
+@media screen and (max-width:900px) {
+    header {
+        background-position: center;
+    }
+
+    .textos h1 {
+        font-size: 80px;
+    }
+
+    .textos h2 {
+        font-size: 35px;
+    }
+
+    .textos a {
+        font-size: 20px;
+    }
+
+    .cualidad {
+        width: 70%;
+    }
+
+    .servicios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .servicios img {
+        width: 90%;
+    }
+
+    .servicios .lista-servicios {
+        width: 80%;
+    }
+
+    .lista-servicios h4 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header{
+        height: 500px;
+    }
+    header .textos {          
+        height: 350px;
+         padding: 50px 0 20px 0;
+    }
+    .textos h1 {
+        font-size: 60px;
+    }
+
+    .textos h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .contenedor {
+        width: 100%;
+    }
+
+    .cualidad {
+        height: 100%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .textos h1 {
+        font-size: 50px;
+    }
+
+    .textos h2 {
+        font-size: 25px;
+    }
+
+    .textos a {
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width:550px) {
+    .redes-sociales{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        justify-items: center;
+        }
+   .redes-sociales a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+   }
+}
+@media screen and (max-width:450px) {
+    .textos h1 {
+        font-size: 40px;
+    }
+    .textos h2 {
+        font-size: 25px;
+    }
+
+}
