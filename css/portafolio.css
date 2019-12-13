@@ -346,6 +346,7 @@ footer img {
 }
 @media screen and (max-width:550px) {
     .redes-sociales{
+        padding: 15px 0;
         margin: auto;
         width: 100%;
         display: flex;
